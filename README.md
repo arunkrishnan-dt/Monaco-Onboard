@@ -1,6 +1,8 @@
 # Monaco Onboard: Quick onboard teams to Dynatrace
 
+> Based on [Dynatrace Monaco Project](https://github.com/dynatrace-oss/dynatrace-monitoring-as-code)
 #### Note: This is not an official Dynatrace document. Please treat as such.
+
 
 This script gets teams to [Level 1](https://github.com/arunkrishnan-dt/Dynatrace-Maturity-Model#level-1-onboardstart-with-dynatrace-1) of [Dynatrace Maturity Model for Teams](https://github.com/arunkrishnan-dt/Dynatrace-Maturity-Model).
 
@@ -64,4 +66,4 @@ Pass `API_TOKEN` when prompted.
 ![result](images/run_result.png)
 
 ## References:
- [Dynatrace Monaco Repo](https://github.com/dynatrace-oss/dynatrace-monitoring-as-code)
+ [Dynatrace Monaco Project](https://github.com/dynatrace-oss/dynatrace-monitoring-as-code)

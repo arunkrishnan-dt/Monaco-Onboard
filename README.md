@@ -18,7 +18,8 @@ Note: Script also include best practise global `Process Group Naming` and `Servi
 
 ## Prerequisite - IMPORTANT!
 
-Recommend setting following Host Properties per server.
+Require `team` Host Property for server
+Recommend setting `application` & `contact` Host Properties as well.
 
 ```
 application: <application_name> # Optional

@@ -1,0 +1,7 @@
+config:
+  - team_application_alerting_profile: "alerting-profile.json"
+
+team_application_alerting_profile:
+  - skipDeployment: "{{ .Env.ALERTING_PROFILE_SKIP_DEPLOYMENT }}"
+  - name: "{{ .Env.ALERTING_PROFILE_NAME }}"
+  - management_zone_id: "/projects/team/management-zone/team_management_zone.id"

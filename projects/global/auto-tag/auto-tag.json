@@ -1,0 +1,33 @@
+{    
+    "name": "{{ .tag }}",
+    "rules": [
+        {
+            "type": "PROCESS_GROUP",
+            "enabled": true,
+            "valueFormat": "{Host:Environment:{{ .tag }}}",
+            "propagationTypes": [
+                "PROCESS_GROUP_TO_SERVICE",
+                "PROCESS_GROUP_TO_HOST"
+            ],
+            "conditions": [
+                {
+                    "key": {
+                        "attribute": "HOST_CUSTOM_METADATA",
+                        "dynamicKey": {
+                            "source": "ENVIRONMENT",
+                            "key": "{{ .tag }}"
+                        },
+                        "type": "HOST_CUSTOM_METADATA_KEY"
+                    },
+                    "comparisonInfo": {
+                        "type": "STRING",
+                        "operator": "EXISTS",
+                        "value": null,
+                        "negate": false,
+                        "caseSensitive": null
+                    }
+                }
+            ]
+        }
+    ]
+}

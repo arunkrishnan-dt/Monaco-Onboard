@@ -1,0 +1,11 @@
+config:
+  - application_tag: auto-tag.json
+  - team_name_tag: auto-tag.json  
+
+application_tag:
+  - name: global_application
+  - tag: application
+
+team_name_tag:
+  - name: global_team
+  - tag: team

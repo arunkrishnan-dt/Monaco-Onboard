@@ -1,0 +1,7 @@
+config:
+  - team_management_zone: management-zone.json
+
+team_management_zone:
+  - skipDeployment: "{{ .Env.MANAGEMENT_ZONE_SKIP_DEPLOYMENT }}"
+  - name: "{{ .Env.MANAGEMENT_ZONE_NAME }}"
+  - auto_tag_name: "{{ .Env.AUTO_TAG_NAME }}"

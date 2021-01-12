@@ -1,0 +1,10 @@
+config:
+  - team_auto_tag: auto-tag.json
+
+team_auto_tag:
+  - name: "{{ .Env.AUTO_TAG_NAME }}"
+  - tag: "{{ .Env.AUTO_TAG_NAME }}"
+  - team_name: "{{ .Env.TEAM_NAME }}"
+  - application_name: "{{ .Env.APPLICATION_NAME }}"
+  - kubernetes_namespace: "{{ .Env.TEAM_KUBERNETES_NAMESPACE }}"
+

@@ -1,0 +1,320 @@
+{    
+    "dashboardMetadata": {
+        "name": "Hipster",
+        "shared": true,
+        "owner": "",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": true
+        },
+        "dashboardFilter": {
+            "timeframe": "",
+            "managementZone": {
+                "id": "{{ .management_zone_id }}",
+                "name": "{{ .management_zone_name }}"
+            }
+        }
+    },
+    "tiles": [
+        {
+            "name": "Problems",
+            "tileType": "OPEN_PROBLEMS",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "width": 152,
+                "height": 152
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Host health",
+            "tileType": "HOSTS",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 608,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": null,
+            "chartVisible": true
+        },
+        {
+            "name": "Service health",
+            "tileType": "SERVICES",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 912,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": null,
+            "chartVisible": true
+        },
+        {
+            "name": "Application health",
+            "tileType": "APPLICATIONS",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 0,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": null,
+            "chartVisible": true
+        },
+        {
+            "name": "Synthetic monitor health",
+            "tileType": "SYNTHETIC_TESTS",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 304,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": null,
+            "chartVisible": true
+        },
+        {
+            "name": "Network metrics",
+            "tileType": "NETWORK",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 1216,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 646,
+                "left": 0,
+                "width": 608,
+                "height": 418
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Response time",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 646,
+                "left": 608,
+                "width": 608,
+                "height": 418
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Failure rate (any  errors)",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.errors.total.rate",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 456,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Active users (estimated)",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:apps.web.activeUsersEst",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "APPLICATION",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.application",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Web application",
+            "tileType": "APPLICATION",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 152,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "assignedEntities": [
+                "{{ .application_id }}"
+            ]
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 760,
+                "width": 760,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Action count (by Apdex category)",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:apps.web.actionCount.category",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "AREA",
+                            "entityType": "APPLICATION",
+                            "dimensions": [
+                                {
+                                    "id": "1",
+                                    "name": "Apdex category",
+                                    "values": [],
+                                    "entityDimension": false
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "MINUTE"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        }
+    ]
+}

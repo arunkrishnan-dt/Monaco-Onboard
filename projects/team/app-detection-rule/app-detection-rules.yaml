@@ -1,0 +1,8 @@
+config:
+  - app-detection-rules: "app-detection-rule.json"
+
+app-detection-rules:
+  - skipDeployment: "{{ .Env.APPLICATION_SKIP_DEPLOYMENT }}"
+  - name: "/projects/team/application/team_application.name"
+  - application_id: "/projects/team/application/team_application.id"
+  - application_url: "{{ .Env.APPLICATION_URL }}"

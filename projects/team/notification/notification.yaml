@@ -1,0 +1,7 @@
+config:
+  - team_email_notification: "notification-email.json"
+
+team_email_notification:
+  - name: "{{ .Env.PROBLEM_NOTIFICATION_NAME }}"
+  - alerting_profile: "/projects/team/alerting-profile/team_application_alerting_profile.id"
+  - main_receivers: "{{ .Env.PROBLEM_NOTIFICATION_EMAIL }}"

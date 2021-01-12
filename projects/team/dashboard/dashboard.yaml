@@ -1,0 +1,9 @@
+config:
+  - team_health_dashboard: "dashboard.json"
+
+team_health_dashboard:
+  - skipDeployment: "{{ .Env.DASHBOARD_SKIP_DEPLOYMENT }}"
+  - name: "{{ .Env.DASHBOARD_NAME }}"
+  - application_id: "/projects/team/application/team_application.id"
+  - management_zone_name: "/projects/team/management-zone/team_management_zone.name"
+  - management_zone_id: "/projects/team/management-zone/team_management_zone.id"

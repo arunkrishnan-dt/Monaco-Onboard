@@ -1,0 +1,6 @@
+config:
+  - team_application: "application.json"
+
+team_application:
+  - skipDeployment: "{{ .Env.APPLICATION_SKIP_DEPLOYMENT }}"
+  - name: "Hipster"

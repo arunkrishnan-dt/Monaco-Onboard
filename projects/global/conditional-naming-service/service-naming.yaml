@@ -1,0 +1,5 @@
+config:
+  - global-k8s-service-naming: "service-naming-rule.json"
+
+global-k8s-service-naming:
+  - name: "global kubernetes pods - K8s | Service default detected name | K8s namespace"

@@ -1,0 +1,4 @@
+arun_test_environment:
+  - name: "arun_test_environment"
+  - env-url: "{{ .Env.DEV_URL }}"
+  - env-token-name: "API_TOKEN"

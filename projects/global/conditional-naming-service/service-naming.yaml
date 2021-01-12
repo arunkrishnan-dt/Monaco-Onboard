@@ -2,4 +2,5 @@ config:
   - global-k8s-service-naming: "service-naming-rule.json"
 
 global-k8s-service-naming:
+  - skipDeployment: "{{ .Env.GLOBAL_SERVICE_NAMING_RULE_SKIP_DEPLOYMENT }}"
   - name: "global kubernetes pods - K8s | Service default detected name | K8s namespace"

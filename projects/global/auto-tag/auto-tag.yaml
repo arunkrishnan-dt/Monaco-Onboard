@@ -3,9 +3,11 @@ config:
   - team_name_tag: auto-tag.json  
 
 application_tag:
+  - skipDeployment: "{{ .Env.GLOBAL_APPLICATION_TAG_SKIP_DEPLOYMENT }}"
   - name: global_application
   - tag: application
 
 team_name_tag:
+  - skipDeployment: "{{ .Env.GLOBAL_TEAM_TAG_SKIP_DEPLOYMENT }}"
   - name: global_team
   - tag: team

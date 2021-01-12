@@ -2,4 +2,5 @@ config:
   - global-k8s-processgroup-naming: "processgroup-naming-rule.json"
 
 global-k8s-processgroup-naming:
+  - skipDeployment: "{{ .Env.GLOBAL_PROCESSGROUP_NAMING_RULE_SKIP_DEPLOYMENT }}"
   - name: "global-kubernetes-pods - K8s | K8s base pods name | K8s namespace"

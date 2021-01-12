@@ -2,7 +2,7 @@
 
 #### Note: This is not an official Dynatrace document. Please treat as such.
 
-This script get teams to [Level 1](https://github.com/arunkrishnan-dt/Dynatrace-Maturity-Model#level-1-onboardstart-with-dynatrace-1) of [Dynatrace Maturity Model for Teams](https://github.com/arunkrishnan-dt/Dynatrace-Maturity-Model).
+This script gets teams to [Level 1](https://github.com/arunkrishnan-dt/Dynatrace-Maturity-Model#level-1-onboardstart-with-dynatrace-1) of [Dynatrace Maturity Model for Teams](https://github.com/arunkrishnan-dt/Dynatrace-Maturity-Model).
 
 Use this script to quickly onboard teams to Dynatrace with team specific:
 1. Auto-tags

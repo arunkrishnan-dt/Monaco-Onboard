@@ -30,7 +30,7 @@
         ]
     },
     "locations": [
-        "SYNTHETIC_LOCATION-D3DA50F696FAFD38"
+        "{{ .node_id }}"
     ],
     "anomalyDetection": {
         "outageHandling": {

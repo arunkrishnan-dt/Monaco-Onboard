@@ -6,9 +6,11 @@ config:
 
 team_browser_monitor:
   - name: "{{ .Env.SYNTHETIC_BROWSER_MONITOR_NAME }}"
+  - node_id: "{{ .Env.SYNTHETIC_BROWSER_MONITOR_NODE_ID }}"
   - action_description: "{{ .Env.SYNTHETIC_BROWSER_MONITOR_ACTION_DESCRIPTION }}"
   - url: "{{ .Env.SYNTHETIC_BROWSER_MONITOR_URL }}"
 
 team_http_monitor:
   - name: "{{ .Env.SYNTHETIC_HTTP_MONITOR_NAME }}"
+  - node_id: "{{ .Env.SYNTHETIC_HTTP_MONITOR_NODE_ID }}"
   - url: "{{ .Env.SYNTHETIC_HTTP_MONITOR_URL }}"

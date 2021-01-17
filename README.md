@@ -13,7 +13,7 @@ Use this script to quickly onboard teams to Dynatrace with team specific:
 4. Application Detection Rules
 5. Alerting Profile
 6. Problem Notification (Email)
-7. Synthetic Monitor - Browser & HTTP
+7. Synthetic Monitor (Private) - Browser & HTTP
 8. Basic Health Dashboard
 
 Note: Script also include best practise global `Process Group Naming` and `Service Naming` rules for microservices, but are disabled by default. Enable in `variables.ini` as required.

@@ -2,8 +2,6 @@ config:
   - team_browser_monitor: "synthetic-browser-monitor.json"
   - team_http_monitor: "synthetic-http-monitor.json"
 
-# Note: Private Synthetic location id is hardcoded. Please edit as required.
-
 team_browser_monitor:
   - name: "{{ .Env.SYNTHETIC_BROWSER_MONITOR_NAME }}"
   - node_id: "{{ .Env.SYNTHETIC_BROWSER_MONITOR_NODE_ID }}"

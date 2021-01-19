@@ -15,7 +15,7 @@
                         "attribute": "HOST_CUSTOM_METADATA",
                         "dynamicKey": {
                             "source": "ENVIRONMENT",
-                            "key": "team_name"
+                            "key": "team"
                         },
                         "type": "HOST_CUSTOM_METADATA_KEY"
                     },
